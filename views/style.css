@@ -1,0 +1,43 @@
+html {
+    background: #ccc;
+    font-family: Arial;
+}
+
+h1 {
+    color: bisque;
+   /* text-shadow: 1px 1px 2px #000;*/
+}
+
+body {
+    margin: 0 10%;
+}
+
+div.output {
+    width: 650px; 
+    border: 1px solid #ebebeb;
+    padding: 10px;
+    background: #fed;
+    box-shadow: 1px 1px 4px;
+    word-wrap: break-word;
+    text-shadow: 1px 1px 1px #999;
+}
+
+div.main{
+    float:left;
+    padding-right:10px;
+}
+
+textarea {
+    font-size: 20pt;
+}
+
+button {
+    font-size: 15pt;
+    padding: 5px;
+    margin-top: 0px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #fff;
+}

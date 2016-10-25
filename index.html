@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html data-ng-app="Alpha">
+
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="views/style.css">
+
+</head>
+
+<body data-ng-controller="AlphaController">
+    <h1>Alpha, Bravo, Charlie</h1>
+    <div class="main">
+        <textarea data-ng-model="input" cols="50" rows="5" data-ng-keyup="populate()"></textarea>
+
+        <div class="output" data-ng-hide="output==''">{{output}}</div>
+    </div>
+    <div style="float:left;">
+        <button type="button" data-ng-click="output=''; input=''" data-ng-hide="output==''">Clear</button>
+    </div>
+    <div style="clear:both;padding:3px;">Reverse
+        <input type="checkbox" data-ng-model="reverse" data-ng-click="populate()" />
+    </div>
+</body>
+
+</html>
